@@ -1,0 +1,879 @@
+Build started
+git config --global core.autocrlf input
+git clone -q --branch=vk_vfetch https://github.com/benvanik/xenia.git c:\dev\xenia
+git checkout -qf 300656f788c387fe14c2d3befc5d0b85fbdfc349
+Running Install scripts
+set PATH=C:\Program Files (x86)\MSBuild\14.0\Bin;%PATH%
+xb.bat setup
+Submodule 'third_party/binutils-ppc-cygwin' (https://github.com/benvanik/binutils-ppc-cygwin) registered for path 'third_party/binutils-ppc-cygwin'
+Submodule 'third_party/capstone' (https://github.com/xenia-project/capstone.git) registered for path 'third_party/capstone'
+Submodule 'third_party/catch' (https://github.com/philsquared/Catch.git) registered for path 'third_party/catch'
+Submodule 'third_party/gflags' (https://github.com/benvanik/gflags.git) registered for path 'third_party/gflags'
+Submodule 'third_party/imgui' (https://github.com/ocornut/imgui.git) registered for path 'third_party/imgui'
+Submodule 'third_party/libav' (https://github.com/xenia-project/libav.git) registered for path 'third_party/libav'
+Submodule 'third_party/premake-core' (https://github.com/xenia-project/premake-core.git) registered for path 'third_party/premake-core'
+Submodule 'third_party/premake-export-compile-commands' (https://github.com/xenia-project/premake-export-compile-commands.git) registered for path 'third_party/premake-export-compile-commands'
+Submodule 'third_party/snappy' (https://github.com/xenia-project/snappy.git) registered for path 'third_party/snappy'
+Submodule 'third_party/spirv-headers' (https://github.com/KhronosGroup/SPIRV-Headers) registered for path 'third_party/spirv-headers'
+Submodule 'third_party/spirv-tools' (https://github.com/xenia-project/SPIRV-Tools.git) registered for path 'third_party/spirv-tools'
+Submodule 'third_party/xbyak' (https://github.com/xenia-project/xbyak.git) registered for path 'third_party/xbyak'
+Submodule 'third_party/yaml-cpp' (https://github.com/jbeder/yaml-cpp.git) registered for path 'third_party/yaml-cpp'
+Cloning into 'C:/dev/xenia/third_party/binutils-ppc-cygwin'...
+Cloning into 'C:/dev/xenia/third_party/capstone'...
+Cloning into 'C:/dev/xenia/third_party/catch'...
+Cloning into 'C:/dev/xenia/third_party/gflags'...
+Cloning into 'C:/dev/xenia/third_party/imgui'...
+Cloning into 'C:/dev/xenia/third_party/libav'...
+Cloning into 'C:/dev/xenia/third_party/premake-core'...
+Cloning into 'C:/dev/xenia/third_party/premake-export-compile-commands'...
+Cloning into 'C:/dev/xenia/third_party/snappy'...
+Cloning into 'C:/dev/xenia/third_party/spirv-headers'...
+Cloning into 'C:/dev/xenia/third_party/spirv-tools'...
+Cloning into 'C:/dev/xenia/third_party/xbyak'...
+Cloning into 'C:/dev/xenia/third_party/yaml-cpp'...
+Submodule path 'third_party/binutils-ppc-cygwin': checked out '6f3f15db908d339472db7be450f7c58bb71545cc'
+Submodule path 'third_party/capstone': checked out '121057635173f4da4ce26dd676c7470aef7bddce'
+Submodule path 'third_party/catch': checked out 'a0ada2e935324db5c951571c52c9b07307ea422f'
+Submodule path 'third_party/gflags': checked out '78b15171a7fce5815df58a919ab593ce80222028'
+Submodule path 'third_party/imgui': checked out 'dc4a07c49a256f4a2c7dcb35d1f4fa3556d57d1c'
+Submodule path 'third_party/libav': checked out '9919df9ebe02baa4f4a8082e82d6807680977f34'
+Submodule path 'third_party/premake-core': checked out '61d799c8f9d1ab8130942b2d9dcd2819b9d8b049'
+Submodule path 'third_party/premake-export-compile-commands': checked out '59e3e55df8dd87eea70556f50d172a17f1c4b6d0'
+Submodule path 'third_party/snappy': checked out '303cd2c64c62c579a8592236f723b611afd3bc15'
+Submodule path 'third_party/spirv-headers': checked out '34d319db9d6cefe93191b921f5f1593378a98c4c'
+Submodule path 'third_party/spirv-tools': checked out '327bc49a2d811ce3c8b3443c2624f1f807965c62'
+Submodule path 'third_party/xbyak': checked out '08f767527377ef3e2a6e0133c26921d138cf87f7'
+Submodule path 'third_party/yaml-cpp': checked out 'e92321aee52fd27566601f9cca53ba90b41e15c1'
+Building configurations...
+    Baking capstone...
+    Baking gflags...
+    Baking glew...
+    Baking glslang-spirv...
+    Baking imgui...
+    Baking libavcodec...
+    Baking libavutil...
+    Baking snappy...
+    Baking spirv-tools...
+    Baking vulkan-loader...
+    Baking xxhash...
+    Baking yaml-cpp...
+    Baking xenia-core...
+    Baking xenia-app...
+    Baking xenia-apu...
+    Baking xenia-apu-nop...
+    Baking xenia-base...
+    Baking xenia-base-tests...
+    Baking xenia-cpu...
+    Baking xenia-cpu-tests...
+    Baking xenia-cpu-ppc-tests...
+    Baking xenia-cpu-backend-x64...
+    Baking xenia-debug-ui...
+    Baking xenia-gpu...
+    Baking xenia-gpu-shader-compiler...
+    Baking xenia-gpu-null...
+    Baking xenia-gpu-gl4...
+    Baking xenia-gpu-gl4-trace-viewer...
+    Baking xenia-gpu-vulkan...
+    Baking xenia-gpu-vulkan-trace-viewer...
+    Baking xenia-gpu-vulkan-trace-dump...
+    Baking xenia-hid...
+    Baking xenia-hid-demo...
+    Baking xenia-hid-nop...
+    Baking xenia-kernel...
+    Baking xenia-ui...
+    Baking xenia-ui-gl...
+    Baking xenia-ui-window-gl-demo...
+    Baking xenia-ui-spirv...
+    Baking xenia-ui-vulkan...
+    Baking xenia-ui-window-vulkan-demo...
+    Baking xenia-vfs...
+    Baking xenia-apu-xaudio2...
+    Baking xenia-hid-winkey...
+    Baking xenia-hid-xinput...
+Running action 'vs2015'...
+Generated build/xenia.sln...
+Generated build/capstone.vcxproj...
+Generated build/capstone.vcxproj.filters...
+Generated build/gflags.vcxproj...
+Generated build/gflags.vcxproj.filters...
+Generated build/glew.vcxproj...
+Generated build/glslang-spirv.vcxproj...
+Generated build/imgui.vcxproj...
+Generated build/libavcodec.vcxproj...
+Generated build/libavcodec.vcxproj.filters...
+Generated build/libavutil.vcxproj...
+Generated build/libavutil.vcxproj.filters...
+Generated build/snappy.vcxproj...
+Generated build/spirv-tools.vcxproj...
+Generated build/spirv-tools.vcxproj.filters...
+Generated build/vulkan-loader.vcxproj...
+Generated build/xxhash.vcxproj...
+Generated build/yaml-cpp.vcxproj...
+Generated build/yaml-cpp.vcxproj.filters...
+Generated build/xenia-core.vcxproj...
+Generated build/xenia-app.vcxproj...
+Generated build/xenia-app.vcxproj.user...
+Generated build/xenia-app.vcxproj.filters...
+Generated build/xenia-apu.vcxproj...
+Generated build/xenia-apu-nop.vcxproj...
+Generated build/xenia-base.vcxproj...
+Generated build/xenia-base-tests.vcxproj...
+Generated build/xenia-base-tests.vcxproj.filters...
+Generated build/xenia-cpu.vcxproj...
+Generated build/xenia-cpu.vcxproj.filters...
+Generated build/xenia-cpu-tests.vcxproj...
+Generated build/xenia-cpu-tests.vcxproj.filters...
+Generated build/xenia-cpu-ppc-tests.vcxproj...
+Generated build/xenia-cpu-ppc-tests.vcxproj.user...
+Generated build/xenia-cpu-ppc-tests.vcxproj.filters...
+Generated build/xenia-cpu-backend-x64.vcxproj...
+Generated build/xenia-debug-ui.vcxproj...
+Generated build/xenia-gpu.vcxproj...
+Generated build/xenia-gpu.vcxproj.filters...
+Generated build/xenia-gpu-shader-compiler.vcxproj...
+Generated build/xenia-gpu-shader-compiler.vcxproj.user...
+Generated build/xenia-gpu-shader-compiler.vcxproj.filters...
+Generated build/xenia-gpu-null.vcxproj...
+Generated build/xenia-gpu-gl4.vcxproj...
+Generated build/xenia-gpu-gl4-trace-viewer.vcxproj...
+Generated build/xenia-gpu-gl4-trace-viewer.vcxproj.user...
+Generated build/xenia-gpu-gl4-trace-viewer.vcxproj.filters...
+Generated build/xenia-gpu-vulkan.vcxproj...
+Generated build/xenia-gpu-vulkan.vcxproj.filters...
+Generated build/xenia-gpu-vulkan-trace-viewer.vcxproj...
+Generated build/xenia-gpu-vulkan-trace-viewer.vcxproj.user...
+Generated build/xenia-gpu-vulkan-trace-viewer.vcxproj.filters...
+Generated build/xenia-gpu-vulkan-trace-dump.vcxproj...
+Generated build/xenia-gpu-vulkan-trace-dump.vcxproj.user...
+Generated build/xenia-gpu-vulkan-trace-dump.vcxproj.filters...
+Generated build/xenia-hid.vcxproj...
+Generated build/xenia-hid-demo.vcxproj...
+Generated build/xenia-hid-demo.vcxproj.filters...
+Generated build/xenia-hid-nop.vcxproj...
+Generated build/xenia-kernel.vcxproj...
+Generated build/xenia-kernel.vcxproj.filters...
+Generated build/xenia-ui.vcxproj...
+Generated build/xenia-ui-gl.vcxproj...
+Generated build/xenia-ui-window-gl-demo.vcxproj...
+Generated build/xenia-ui-window-gl-demo.vcxproj.filters...
+Generated build/xenia-ui-spirv.vcxproj...
+Generated build/xenia-ui-vulkan.vcxproj...
+Generated build/xenia-ui-vulkan.vcxproj.filters...
+Generated build/xenia-ui-window-vulkan-demo.vcxproj...
+Generated build/xenia-ui-window-vulkan-demo.vcxproj.filters...
+Generated build/xenia-vfs.vcxproj...
+Generated build/xenia-vfs.vcxproj.filters...
+Generated build/xenia-apu-xaudio2.vcxproj...
+Generated build/xenia-hid-winkey.vcxproj...
+Generated build/xenia-hid-xinput.vcxproj...
+Done (1216ms).
+Setting up the build environment...
+- git submodule init / update...
+- running premake...
+Success!
+xb.bat build --config=%CONFIGURATION% --target=src\xenia-app --target=tests\xenia-cpu-ppc-tests
+Building configurations...
+    Baking capstone...
+    Baking gflags...
+    Baking glew...
+    Baking glslang-spirv...
+    Baking imgui...
+    Baking libavcodec...
+    Baking libavutil...
+    Baking snappy...
+    Baking spirv-tools...
+    Baking vulkan-loader...
+    Baking xxhash...
+    Baking yaml-cpp...
+    Baking xenia-core...
+    Baking xenia-app...
+    Baking xenia-apu...
+    Baking xenia-apu-nop...
+    Baking xenia-base...
+    Baking xenia-base-tests...
+    Baking xenia-cpu...
+    Baking xenia-cpu-tests...
+    Baking xenia-cpu-ppc-tests...
+    Baking xenia-cpu-backend-x64...
+    Baking xenia-debug-ui...
+    Baking xenia-gpu...
+    Baking xenia-gpu-shader-compiler...
+    Baking xenia-gpu-null...
+    Baking xenia-gpu-gl4...
+    Baking xenia-gpu-gl4-trace-viewer...
+    Baking xenia-gpu-vulkan...
+    Baking xenia-gpu-vulkan-trace-viewer...
+    Baking xenia-gpu-vulkan-trace-dump...
+    Baking xenia-hid...
+    Baking xenia-hid-demo...
+    Baking xenia-hid-nop...
+    Baking xenia-kernel...
+    Baking xenia-ui...
+    Baking xenia-ui-gl...
+    Baking xenia-ui-window-gl-demo...
+    Baking xenia-ui-spirv...
+    Baking xenia-ui-vulkan...
+    Baking xenia-ui-window-vulkan-demo...
+    Baking xenia-vfs...
+    Baking xenia-apu-xaudio2...
+    Baking xenia-hid-winkey...
+    Baking xenia-hid-xinput...
+Running action 'vs2015'...
+Done (1119ms).
+  MCInst.c
+  MCInstrDesc.c
+  gflags.cc
+  gflags_completions.cc
+  MCRegisterInfo.c
+  SStream.c
+  X86ATTInstPrinter.c
+  X86Disassembler.c
+  X86DisassemblerDecoder.c
+  X86IntelInstPrinter.c
+  X86Mapping.c
+  X86Module.c
+  cs.c
+  utils.c
+  glew.c
+  glew.vcxproj -> C:\dev\xenia\build\bin\Windows\Release\glew.lib
+  capstone.vcxproj -> C:\dev\xenia\build\bin\Windows\Release\capstone.lib
+  gflags_reporting.cc
+  port.cc
+  InReadableOrder.cpp
+  SPVRemapper.cpp
+  gflags.vcxproj -> C:\dev\xenia\build\bin\Windows\Release\gflags.lib
+  imgui.cpp
+  imgui_demo.cpp
+  imgui_draw.cpp
+  imgui.vcxproj -> C:\dev\xenia\build\bin\Windows\Release\imgui.lib
+  SpvBuilder.cpp
+  adler32.c
+  aes.c
+  atomic.c
+  audio_fifo.c
+  avstring.c
+  base64.c
+  blowfish.c
+  buffer.c
+  channel_layout.c
+  cpu.c
+  crc.c
+  des.c
+  dict.c
+  display.c
+  downmix_info.c
+  error.c
+  eval.c
+  fifo.c
+  file.c
+  file_open.c
+  disassemble.cpp
+  float_dsp.c
+  frame.c
+  hmac.c
+  imgutils.c
+  intmath.c
+  lfg.c
+  lls.c
+  log.c
+  log2_tab.c
+  lzo.c
+  mathematics.c
+  md5.c
+  mem.c
+  opt.c
+  parseutils.c
+  pixdesc.c
+  random_seed.c
+  rational.c
+  rc4.c
+  samplefmt.c
+  sha.c
+  stereo3d.c
+  snappy-sinksource.cc
+  snappy-stubs-internal.cc
+  snappy.cc
+  doc.cpp
+  time.c
+  tree.c
+  utils.c
+  float_dsp_init.c
+  lls_init.c
+  xtea.c
+  snappy.vcxproj -> C:\dev\xenia\build\bin\Windows\Release\snappy.lib
+  cpu.c
+  assembly_grammar.cpp
+  binary.cpp
+  diagnostic.cpp
+  glslang-spirv.vcxproj -> C:\dev\xenia\build\bin\Windows\Release\glslang-spirv.lib
+  disassemble.cpp
+  ext_inst.cpp
+  instruction.cpp
+  opcode.cpp
+  operand.cpp
+  print.cpp
+  spirv_endian.cpp
+  spirv_target_env.cpp
+  table.cpp
+  text.cpp
+  libavutil.vcxproj -> C:\dev\xenia\build\bin\Windows\Release\libavutil.lib
+  cJSON.c
+  debug_report.c
+  dev_ext_trampoline.c
+  dirent_on_windows.c
+  extension_manual.c
+  text_handler.cpp
+  loader.c
+  murmurhash.c
+  phys_dev_ext.c
+  trampoline.c
+  unknown_ext_chain.c
+  wsi.c
+  vulkan-loader.vcxproj -> C:\dev\xenia\build\bin\Windows\Release\vulkan-loader.lib
+  arena.cc
+  bit_map.cc
+  bit_stream.cc
+  byte_stream.cc
+  clock.cc
+  clock_win.cc
+  debugging_win.cc
+  exception_handler_win.cc
+  filesystem.cc
+  filesystem_wildcard.cc
+  BasicBlock.cpp
+  Construct.cpp
+  Function.cpp
+  ValidationState.cpp
+  validate.cpp
+  validate_cfg.cpp
+  validate_id.cpp
+  validate_instruction.cpp
+  validate_layout.cpp
+  validate_ssa.cpp
+  filesystem_win.cc
+  logging.cc
+  mapped_memory_win.cc
+  fft_init_aarch64.c
+  fft_init_arm.c
+  avpacket.c
+  bitstream.c
+  bitstream_filter.c
+  codec_desc.c
+  fft_float.c
+  imgconvert.c
+  log2_tab.c
+  mathtables.c
+  mdct_float.c
+  options.c
+  parser.c
+  fft_init.c
+  pthread.c
+  pthread_frame.c
+  pthread_slice.c
+  qsv_api.c
+  sinewin.c
+  utils.c
+  wma.c
+  wma_common.c
+  wma_freqs.c
+  fdct.c
+  fdctdsp_init.c
+  xma2dec.c
+  math.cc
+  memory.cc
+  memory_win.cc
+  mutex.cc
+  platform_win.cc
+  spirv-tools.vcxproj -> C:\dev\xenia\build\bin\Windows\Release\spirv-tools.lib
+  profiling.cc
+  ring_buffer.cc
+  socket_win.cc
+  string.cc
+  string_buffer.cc
+  threading.cc
+  threading_win.cc
+  x64_context.cc
+  fft_init.c
+  libavcodec.vcxproj -> C:\dev\xenia\build\bin\Windows\Release\libavcodec.lib
+  xenia-base.vcxproj -> C:\dev\xenia\build\bin\Windows\Release\xenia-base.lib
+  binary.cpp
+  graphbuilder.cpp
+  xxhash.c
+  graphbuilderadapter.cpp
+  convert.cpp
+  emulator.cc
+  xxhash.vcxproj -> C:\dev\xenia\build\bin\Windows\Release\xxhash.lib
+  memory.cc
+  directives.cpp
+  emit.cpp
+  emitfromevents.cpp
+  file_picker_win.cc
+  graphics_context.cc
+  imgui_dialog.cc
+  emitter.cpp
+  emitterstate.cpp
+  imgui_drawer.cc
+  emitterutils.cpp
+  loop.cc
+  exp.cpp
+  loop_win.cc
+  memory.cpp
+  menu_item.cc
+  node.cpp
+  microprofile_drawer.cc
+  node_data.cpp
+  assembler.cc
+  backend.cc
+  breakpoint.cc
+  nodebuilder.cpp
+  window.cc
+  window_win.cc
+  compiler.cc
+  nodeevents.cpp
+  null.cpp
+  ostream_wrapper.cpp
+  compiler_pass.cc
+  parse.cpp
+  parser.cpp
+  constant_propagation_pass.cc
+  context_promotion_pass.cc
+  apu_flags.cc
+  regex_yaml.cpp
+  scanner.cpp
+  scanscalar.cpp
+  audio_driver.cc
+  audio_system.cc
+  xma_context.cc
+  control_flow_analysis_pass.cc
+  control_flow_simplification_pass.cc
+  scantag.cpp
+  scantoken.cpp
+  xma_decoder.cc
+  simplekey.cpp
+  data_flow_analysis_pass.cc
+  singledocparser.cpp
+  dead_code_elimination_pass.cc
+  stream.cpp
+  tag.cpp
+  finalization_pass.cc
+  memory_sequence_combination_pass.cc
+  xenia-apu.vcxproj -> C:\dev\xenia\build\bin\Windows\Release\xenia-apu.lib
+  register_allocation_pass.cc
+  simplification_pass.cc
+  validation_pass.cc
+  yaml-cpp.vcxproj -> C:\dev\xenia\build\bin\Windows\Release\yaml-cpp.lib
+  xenia-core.vcxproj -> C:\dev\xenia\build\bin\Windows\Release\xenia-core.lib
+  value_reduction_pass.cc
+  cpu_flags.cc
+  xenia-ui.vcxproj -> C:\dev\xenia\build\bin\Windows\Release\xenia-ui.lib
+  elf_module.cc
+  entry_table.cc
+  spirv_assembler.cc
+  spirv_disassembler.cc
+  spirv_util.cc
+  spirv_validator.cc
+  export_resolver.cc
+  function.cc
+  function_debug_info.cc
+  block.cc
+  hir_builder.cc
+  instr.cc
+  opcodes.cc
+  value.cc
+  mmio_handler.cc
+  module.cc
+  blitter.cc
+  circular_buffer.cc
+  gl_context.cc
+  gl_context_win.cc
+  gl_immediate_drawer.cc
+  gl_provider.cc
+  xenia-ui-spirv.vcxproj -> C:\dev\xenia\build\bin\Windows\Release\xenia-ui-spirv.lib
+  hid_flags.cc
+  ppc_context.cc
+  input_driver.cc
+  input_system.cc
+  ppc_emit_altivec.cc
+  ppc_emit_alu.cc
+  ppc_emit_control.cc
+  ppc_emit_fpu.cc
+  xenia-hid.vcxproj -> C:\dev\xenia\build\bin\Windows\Release\xenia-hid.lib
+  ppc_emit_memory.cc
+  ppc_frontend.cc
+  ppc_hir_builder.cc
+  blitter.cc
+  circular_buffer.cc
+  fenced_pools.cc
+  xenia-ui-gl.vcxproj -> C:\dev\xenia\build\bin\Windows\Release\xenia-ui-gl.lib
+  vulkan.cc
+  ppc_opcode_disasm.cc
+  vulkan_context.cc
+  vulkan_device.cc
+  ppc_opcode_info.cc
+  ppc_opcode_lookup.cc
+  ppc_opcode_table.cc
+  device.cc
+  disc_image_device.cc
+  vulkan_immediate_drawer.cc
+  vulkan_instance.cc
+  disc_image_entry.cc
+  disc_image_file.cc
+  vulkan_provider.cc
+  host_path_device.cc
+  host_path_entry.cc
+  vulkan_swap_chain.cc
+  vulkan_util.cc
+  host_path_file.cc
+  stfs_container_device.cc
+  stfs_container_entry.cc
+  ppc_scanner.cc
+  ppc_translator.cc
+  processor.cc
+  raw_module.cc
+  stack_walker_win.cc
+  test_module.cc
+  stfs_container_file.cc
+  entry.cc
+  thread.cc
+  virtual_file_system.cc
+  thread_state.cc
+  xenia-ui-vulkan.vcxproj -> C:\dev\xenia\build\bin\Windows\Release\xenia-ui-vulkan.lib
+  xex_module.cc
+  winkey_hid.cc
+  winkey_input_driver.cc
+  xenia-vfs.vcxproj -> C:\dev\xenia\build\bin\Windows\Release\xenia-vfs.lib
+  nop_hid.cc
+  nop_input_driver.cc
+  xinput_hid.cc
+  xinput_input_driver.cc
+  xenia-cpu.vcxproj -> C:\dev\xenia\build\bin\Windows\Release\xenia-cpu.lib
+  debug_window.cc
+  x64_assembler.cc
+  x64_backend.cc
+  nop_apu_flags.cc
+  nop_audio_system.cc
+  x64_code_cache.cc
+  kernel_module.cc
+  xaudio2_apu_flags.cc
+  xaudio2_audio_driver.cc
+  kernel_state.cc
+  xaudio2_audio_system.cc
+  x64_code_cache_win.cc
+  x64_emitter.cc
+  notify_listener.cc
+  x64_function.cc
+  x64_sequences.cc
+  xenia-apu-nop.vcxproj -> C:\dev\xenia\build\bin\Windows\Release\xenia-apu-nop.lib
+  user_module.cc
+  gameinfo_utils.cc
+  x64_tracers.cc
+  native_list.cc
+  object_table.cc
+  shim_utils.cc
+  xdbf_utils.cc
+  xenia-apu-xaudio2.vcxproj -> C:\dev\xenia\build\bin\Windows\Release\xenia-apu-xaudio2.lib
+  xex2.cc
+  app_manager.cc
+  xgi_app.cc
+  xenia-debug-ui.vcxproj -> C:\dev\xenia\build\bin\Windows\Release\xenia-debug-ui.lib
+  xenia-cpu-backend-x64.vcxproj -> C:\dev\xenia\build\bin\Windows\Release\xenia-cpu-backend-x64.lib
+  xlivebase_app.cc
+  xmp_app.cc
+  xenia-hid-xinput.vcxproj -> C:\dev\xenia\build\bin\Windows\Release\xenia-hid-xinput.lib
+  xenia-hid-nop.vcxproj -> C:\dev\xenia\build\bin\Windows\Release\xenia-hid-nop.lib
+  content_manager.cc
+  user_profile.cc
+  xenia-hid-winkey.vcxproj -> C:\dev\xenia\build\bin\Windows\Release\xenia-hid-winkey.lib
+  command_processor.cc
+  glsl_shader_translator.cc
+  xam_avatar.cc
+  gpu_flags.cc
+  graphics_system.cc
+  xam_content.cc
+  packet_disassembler.cc
+  register_file.cc
+  sampler_info.cc
+  shader.cc
+  shader_translator.cc
+  shader_translator_disasm.cc
+  xam_info.cc
+  compiler.cc
+  control_flow_analysis_pass.cpp
+  control_flow_simplification_pass.cc
+  xam_input.cc
+  spirv_shader_translator.cc
+  texture_info.cc
+  texture_info_formats.cc
+  trace_dump.cc
+  trace_player.cc
+  xam_module.cc
+  trace_reader.cc
+  xam_msg.cc
+  trace_viewer.cc
+  trace_writer.cc
+  xam_net.cc
+  xam_notify.cc
+  xenia-gpu.vcxproj -> C:\dev\xenia\build\bin\Windows\Release\xenia-gpu.lib
+  null_command_processor.cc
+  draw_batcher.cc
+  null_graphics_system.cc
+  gl4_command_processor.cc
+  gl4_gpu_flags.cc
+  xam_nui.cc
+  gl4_graphics_system.cc
+  gl4_shader.cc
+  gl4_shader_cache.cc
+  texture_cache.cc
+  xam_ui.cc
+  xam_user.cc
+  buffer_cache.cc
+  pipeline_cache.cc
+  xenia-gpu-null.vcxproj -> C:\dev\xenia\build\bin\Windows\Release\xenia-gpu-null.lib
+  render_cache.cc
+  texture_cache.cc
+  xam_video.cc
+  xam_voice.cc
+  vulkan_command_processor.cc
+  vulkan_gpu_flags.cc
+  vulkan_graphics_system.cc
+  xbdm_misc.cc
+  xbdm_module.cc
+  vulkan_shader.cc
+  xenia-gpu-gl4.vcxproj -> C:\dev\xenia\build\bin\Windows\Release\xenia-gpu-gl4.lib
+  xboxkrnl_audio.cc
+  xboxkrnl_audio_xma.cc
+  xenia-gpu-vulkan.vcxproj -> C:\dev\xenia\build\bin\Windows\Release\xenia-gpu-vulkan.lib
+  xboxkrnl_crypt.cc
+  xboxkrnl_debug.cc
+  xboxkrnl_error.cc
+  xboxkrnl_hal.cc
+  xboxkrnl_io.cc
+  xboxkrnl_memory.cc
+  xboxkrnl_misc.cc
+  xboxkrnl_module.cc
+  xboxkrnl_modules.cc
+  xboxkrnl_ob.cc
+  xboxkrnl_rtl.cc
+  xboxkrnl_strings.cc
+  xboxkrnl_threading.cc
+  xboxkrnl_usbcam.cc
+  xboxkrnl_video.cc
+  xenumerator.cc
+  xevent.cc
+  xfile.cc
+  xiocompletion.cc
+  xmodule.cc
+  xmutant.cc
+  xobject.cc
+  xsemaphore.cc
+  xsocket.cc
+  xthread.cc
+  xtimer.cc
+  xenia-kernel.vcxproj -> C:\dev\xenia\build\bin\Windows\Release\xenia-kernel.lib
+  emulator_window.cc
+  xenia_main.cc
+  main_win.cc
+     Creating library bin\Windows\Release\xenia.lib and object bin\Windows\Release\xenia.exp
+  Generating code
+  All 53988 functions were compiled because no usable IPDB/IOBJ from previous compilation was found.
+  Finished generating code
+  xenia-app.vcxproj -> C:\dev\xenia\build\bin\Windows\Release\xenia.exe
+  xenia-app.vcxproj -> bin\Windows\Release\xenia.pdb (Full PDB)
+  main_win.cc
+  ppc_testing_main.cc
+  Generating code
+  All 14858 functions were compiled because no usable IPDB/IOBJ from previous compilation was found.
+  Finished generating code
+  xenia-cpu-ppc-tests.vcxproj -> C:\dev\xenia\build\bin\Windows\Release\xenia-cpu-ppc-tests.exe
+  xenia-cpu-ppc-tests.vcxproj -> bin\Windows\Release\xenia-cpu-ppc-tests.pdb (Full PDB)
+Building release...
+- running premake...
+- building (src\xenia-app, tests\xenia-cpu-ppc-tests):release...
+Success!
+7z a xenia-%appveyor_repo_branch%.zip LICENSE %APPVEYOR_BUILD_FOLDER%\build\bin\%PLATFORM%\%CONFIGURATION%\xenia.exe %APPVEYOR_BUILD_FOLDER%\build\bin\%PLATFORM%\%CONFIGURATION%\xenia.pdb
+7-Zip [64] 16.04 : Copyright (c) 1999-2016 Igor Pavlov : 2016-10-04
+Scanning the drive:
+3 files, 44761545 bytes (43 MiB)
+Creating archive: xenia-vk_vfetch.zip
+Items to compress: 3
+Files read from disk: 3
+Archive size: 10632923 bytes (11 MiB)
+Everything is Ok
+xb.bat gentests
+Generating test binaries...
+- src\xenia\cpu\ppc\testing\instr_add.s
+- src\xenia\cpu\ppc\testing\instr_addc.s
+- src\xenia\cpu\ppc\testing\instr_adde.s
+- src\xenia\cpu\ppc\testing\instr_addic.s
+- src\xenia\cpu\ppc\testing\instr_addis.s
+- src\xenia\cpu\ppc\testing\instr_addme.s
+- src\xenia\cpu\ppc\testing\instr_addze.s
+- src\xenia\cpu\ppc\testing\instr_and.s
+- src\xenia\cpu\ppc\testing\instr_andc.s
+- src\xenia\cpu\ppc\testing\instr_andi.s
+- src\xenia\cpu\ppc\testing\instr_andis.s
+- src\xenia\cpu\ppc\testing\instr_cmp.s
+- src\xenia\cpu\ppc\testing\instr_cmpi.s
+- src\xenia\cpu\ppc\testing\instr_cmpl.s
+- src\xenia\cpu\ppc\testing\instr_cmpli.s
+- src\xenia\cpu\ppc\testing\instr_cntlzd.s
+- src\xenia\cpu\ppc\testing\instr_cntlzw.s
+- src\xenia\cpu\ppc\testing\instr_divd.s
+- src\xenia\cpu\ppc\testing\instr_divdu.s
+- src\xenia\cpu\ppc\testing\instr_divw.s
+- src\xenia\cpu\ppc\testing\instr_divwu.s
+- src\xenia\cpu\ppc\testing\instr_eqv.s
+- src\xenia\cpu\ppc\testing\instr_extsb.s
+- src\xenia\cpu\ppc\testing\instr_extsh.s
+- src\xenia\cpu\ppc\testing\instr_extsw.s
+- src\xenia\cpu\ppc\testing\instr_fabs.s
+- src\xenia\cpu\ppc\testing\instr_fadd.s
+- src\xenia\cpu\ppc\testing\instr_fctixz.s
+- src\xenia\cpu\ppc\testing\instr_fmadd.s
+- src\xenia\cpu\ppc\testing\instr_fmadds.s
+- src\xenia\cpu\ppc\testing\instr_fmul.s
+- src\xenia\cpu\ppc\testing\instr_fnabs.s
+- src\xenia\cpu\ppc\testing\instr_frsqrte.s
+- src\xenia\cpu\ppc\testing\instr_fsel.s
+- src\xenia\cpu\ppc\testing\instr_fsqrt.s
+- src\xenia\cpu\ppc\testing\instr_lvexx.s
+- src\xenia\cpu\ppc\testing\instr_lvl.s
+- src\xenia\cpu\ppc\testing\instr_lvr.s
+- src\xenia\cpu\ppc\testing\instr_lvsl.s
+- src\xenia\cpu\ppc\testing\instr_lvsr.s
+- src\xenia\cpu\ppc\testing\instr_mulhd.s
+- src\xenia\cpu\ppc\testing\instr_mulhdu.s
+- src\xenia\cpu\ppc\testing\instr_mulhw.s
+- src\xenia\cpu\ppc\testing\instr_mulhwu.s
+- src\xenia\cpu\ppc\testing\instr_mulld.s
+- src\xenia\cpu\ppc\testing\instr_mulli.s
+- src\xenia\cpu\ppc\testing\instr_mullw.s
+- src\xenia\cpu\ppc\testing\instr_neg.s
+- src\xenia\cpu\ppc\testing\instr_nor.s
+- src\xenia\cpu\ppc\testing\instr_ori.s
+- src\xenia\cpu\ppc\testing\instr_rldicl.s
+- src\xenia\cpu\ppc\testing\instr_rldicr.s
+- src\xenia\cpu\ppc\testing\instr_rlwimi.s
+- src\xenia\cpu\ppc\testing\instr_rlwinm.s
+- src\xenia\cpu\ppc\testing\instr_rlwnm.s
+- src\xenia\cpu\ppc\testing\instr_sld.s
+- src\xenia\cpu\ppc\testing\instr_slw.s
+- src\xenia\cpu\ppc\testing\instr_srad.s
+- src\xenia\cpu\ppc\testing\instr_sradi.s
+- src\xenia\cpu\ppc\testing\instr_sraw.s
+- src\xenia\cpu\ppc\testing\instr_srawi.s
+- src\xenia\cpu\ppc\testing\instr_srd.s
+- src\xenia\cpu\ppc\testing\instr_srw.s
+- src\xenia\cpu\ppc\testing\instr_stvew.s
+- src\xenia\cpu\ppc\testing\instr_stvl.s
+- src\xenia\cpu\ppc\testing\instr_stvr.s
+- src\xenia\cpu\ppc\testing\instr_subf.s
+- src\xenia\cpu\ppc\testing\instr_subfc.s
+- src\xenia\cpu\ppc\testing\instr_subfe.s
+- src\xenia\cpu\ppc\testing\instr_subfic.s
+- src\xenia\cpu\ppc\testing\instr_subfme.s
+- src\xenia\cpu\ppc\testing\instr_subfze.s
+- src\xenia\cpu\ppc\testing\instr_td.s
+- src\xenia\cpu\ppc\testing\instr_tdi.s
+- src\xenia\cpu\ppc\testing\instr_tw.s
+- src\xenia\cpu\ppc\testing\instr_twi.s
+- src\xenia\cpu\ppc\testing\instr_vaddfp.s
+- src\xenia\cpu\ppc\testing\instr_vaddfp128.s
+- src\xenia\cpu\ppc\testing\instr_vaddshs.s
+- src\xenia\cpu\ppc\testing\instr_vadduhm.s
+- src\xenia\cpu\ppc\testing\instr_vand.s
+- src\xenia\cpu\ppc\testing\instr_vand128.s
+- src\xenia\cpu\ppc\testing\instr_vandc.s
+- src\xenia\cpu\ppc\testing\instr_vandc128.s
+- src\xenia\cpu\ppc\testing\instr_vavgsh.s
+- src\xenia\cpu\ppc\testing\instr_vavguh.s
+- src\xenia\cpu\ppc\testing\instr_vcfsx.s
+- src\xenia\cpu\ppc\testing\instr_vcmpxxfp.s
+- src\xenia\cpu\ppc\testing\instr_vcmpxxfp128.s
+- src\xenia\cpu\ppc\testing\instr_vctsxs.s
+- src\xenia\cpu\ppc\testing\instr_vexptefp.s
+- src\xenia\cpu\ppc\testing\instr_vmaddfp.s
+- src\xenia\cpu\ppc\testing\instr_vmaxfp.s
+- src\xenia\cpu\ppc\testing\instr_vmaxfp128.s
+- src\xenia\cpu\ppc\testing\instr_vmaxsh.s
+- src\xenia\cpu\ppc\testing\instr_vmaxuh.s
+- src\xenia\cpu\ppc\testing\instr_vminfp.s
+- src\xenia\cpu\ppc\testing\instr_vminfp128.s
+- src\xenia\cpu\ppc\testing\instr_vminsh.s
+- src\xenia\cpu\ppc\testing\instr_vminuh.s
+- src\xenia\cpu\ppc\testing\instr_vmrghb.s
+- src\xenia\cpu\ppc\testing\instr_vmrghh.s
+- src\xenia\cpu\ppc\testing\instr_vmrghw.s
+- src\xenia\cpu\ppc\testing\instr_vmrglb.s
+- src\xenia\cpu\ppc\testing\instr_vmrglh.s
+- src\xenia\cpu\ppc\testing\instr_vmrglw.s
+- src\xenia\cpu\ppc\testing\instr_vmsum3fp128.s
+- src\xenia\cpu\ppc\testing\instr_vmsum4fp128.s
+- src\xenia\cpu\ppc\testing\instr_vor.s
+- src\xenia\cpu\ppc\testing\instr_vor128.s
+- src\xenia\cpu\ppc\testing\instr_vperm.s
+- src\xenia\cpu\ppc\testing\instr_vpermwi128.s
+- src\xenia\cpu\ppc\testing\instr_vpkd3d128.s
+- src\xenia\cpu\ppc\testing\instr_vpkpx.s
+- src\xenia\cpu\ppc\testing\instr_vpkshss.s
+- src\xenia\cpu\ppc\testing\instr_vpkshss128.s
+- src\xenia\cpu\ppc\testing\instr_vpkshus.s
+- src\xenia\cpu\ppc\testing\instr_vpkshus128.s
+- src\xenia\cpu\ppc\testing\instr_vpkswss.s
+- src\xenia\cpu\ppc\testing\instr_vpkswss128.s
+- src\xenia\cpu\ppc\testing\instr_vpkswus.s
+- src\xenia\cpu\ppc\testing\instr_vpkswus128.s
+- src\xenia\cpu\ppc\testing\instr_vpkuhum.s
+- src\xenia\cpu\ppc\testing\instr_vpkuhum128.s
+- src\xenia\cpu\ppc\testing\instr_vpkuhus.s
+- src\xenia\cpu\ppc\testing\instr_vpkuhus128.s
+- src\xenia\cpu\ppc\testing\instr_vpkuwum.s
+- src\xenia\cpu\ppc\testing\instr_vpkuwum128.s
+- src\xenia\cpu\ppc\testing\instr_vpkuwus.s
+- src\xenia\cpu\ppc\testing\instr_vpkuwus128.s
+- src\xenia\cpu\ppc\testing\instr_vrfin.s
+- src\xenia\cpu\ppc\testing\instr_vrlh.s
+- src\xenia\cpu\ppc\testing\instr_vrlimi128.s
+- src\xenia\cpu\ppc\testing\instr_vsel.s
+- src\xenia\cpu\ppc\testing\instr_vsl.s
+- src\xenia\cpu\ppc\testing\instr_vslb.s
+- src\xenia\cpu\ppc\testing\instr_vsldoi.s
+- src\xenia\cpu\ppc\testing\instr_vslh.s
+- src\xenia\cpu\ppc\testing\instr_vslo.s
+- src\xenia\cpu\ppc\testing\instr_vslw.s
+- src\xenia\cpu\ppc\testing\instr_vspltb.s
+- src\xenia\cpu\ppc\testing\instr_vsplth.s
+- src\xenia\cpu\ppc\testing\instr_vspltisb.s
+- src\xenia\cpu\ppc\testing\instr_vspltish.s
+- src\xenia\cpu\ppc\testing\instr_vspltisw.s
+- src\xenia\cpu\ppc\testing\instr_vspltw.s
+- src\xenia\cpu\ppc\testing\instr_vsr.s
+- src\xenia\cpu\ppc\testing\instr_vsrah.s
+- src\xenia\cpu\ppc\testing\instr_vsrh.s
+- src\xenia\cpu\ppc\testing\instr_vsro.s
+- src\xenia\cpu\ppc\testing\instr_vsubfp.s
+- src\xenia\cpu\ppc\testing\instr_vsubfp128.s
+- src\xenia\cpu\ppc\testing\instr_vsubshs.s
+- src\xenia\cpu\ppc\testing\instr_vsubuhm.s
+- src\xenia\cpu\ppc\testing\instr_vupkd3d128.s
+- src\xenia\cpu\ppc\testing\instr_vupkhsb.s
+- src\xenia\cpu\ppc\testing\instr_vupkhsb128.s
+- src\xenia\cpu\ppc\testing\instr_vupkhsh.s
+- src\xenia\cpu\ppc\testing\instr_vupklsb.s
+- src\xenia\cpu\ppc\testing\instr_vupklsb128.s
+- src\xenia\cpu\ppc\testing\instr_vupklsh.s
+- src\xenia\cpu\ppc\testing\instr_vxor.s
+- src\xenia\cpu\ppc\testing\instr_vxor128.s
+- src\xenia\cpu\ppc\testing\seq_branch_carry.s
+- src\xenia\cpu\ppc\testing\seq_jumptable_constants.s
+xb.bat test --config=%CONFIGURATION% --no_build
+Testing...
+- C:\dev\xenia\build\bin\windows\release\xenia-cpu-ppc-tests.exe
+Collecting artifacts...
+Found artifact 'xenia-cpu-ppc-test.log' matching 'xenia-cpu-ppc-test.log' path
+Found artifact 'xenia-vk_vfetch.zip' matching 'xenia-vk_vfetch.zip' path
+Uploading artifacts...
+[1/2] xenia-cpu-ppc-test.log (49,992 bytes)...100%
+[2/2] xenia-vk_vfetch.zip (10,632,923 bytes)...100%
+"Environment" deployment for branch "master" has been skipped because current branch is "vk_vfetch"
+Build success
